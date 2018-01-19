@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    android:orientation="vertical"
+    tools:context="com.example.vanki.loginfacebook.MainActivity">
+
+    <ImageView
+        android:id="@+id/img_facebook"
+        android:layout_marginBottom="@dimen/edt_margin_bottom"
+        android:layout_marginStart="@dimen/edt_margin_left"
+        android:layout_marginEnd="@dimen/edt_margin_right"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/image_facebook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:contentDescription="@string/todo" />
+
+    <EditText
+        android:id="@+id/edt_email"
+        android:inputType="textEmailAddress"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/img_facebook"
+        android:background="@drawable/bg_edt"
+        android:hint="@string/hint_email_phone"
+        android:padding="@dimen/text_padding"
+        android:textColor="@color/black"
+        android:layout_marginStart="@dimen/edt_margin_left"
+        android:layout_marginEnd="@dimen/edt_margin_right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/edt_pass"
+        android:inputType="textPassword"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/edt_email"
+        android:background="@drawable/bg_edt"
+        android:hint="@string/hint_pass"
+        android:padding="@dimen/text_padding"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/edt_margin_top"
+        android:layout_marginStart="@dimen/edt_margin_left"
+        android:layout_marginEnd="@dimen/edt_margin_right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_below="@id/edt_pass"
+        android:layout_marginTop="@dimen/edt_margin_top"
+        android:layout_marginStart="@dimen/edt_margin_left"
+        android:layout_marginEnd="@dimen/edt_margin_right"
+        android:background="@drawable/bg_button"
+        android:textColor="@color/white"
+        android:text="@string/text_login"
+        android:textAllCaps="false"
+        android:textSize="@dimen/text_size_large"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/txt_sign_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/edt_margin_bottom"
+        android:layout_marginStart="@dimen/edt_margin_left"
+        android:layout_marginEnd="@dimen/edt_margin_right"
+        android:gravity="center"
+        android:padding="@dimen/text_padding"
+        android:text="@string/text_sign_up"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_small"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/txt_sign_up"
+        android:layout_alignEnd="@+id/txt_sign_up"
+        android:background="@drawable/bg_button"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:text="?"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_large" />
+
+
+</RelativeLayout>
